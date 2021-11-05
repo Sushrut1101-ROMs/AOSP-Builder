@@ -56,7 +56,7 @@ task:
       - git clone $VT_LINK $VT_PATH
       - git clone $KT_LINK $KT_PATH
       - echo "============================"
-      - echo "Syncing Complete!"
+      - echo "Sync Completed!"
       - echo "============================"
 
   Build_script:
@@ -82,10 +82,11 @@ task:
       - pwd
       - chmod 777 *
       - curl --upload-file *.zip https://transfer.sh | tee link.txt && echo " "
-      - rm -rm *.zip
+      - echo "Removing the build..."
+      - rm -rf *.zip
       - echo " "
       - echo "============================"
-      - echo "Build Uploaded!"
+      - echo "Build Uploaded Successfully!"
       - echo "Please see the link Below-  "
       - echo "----------------------------"
       - cat link.txt && echo " "
