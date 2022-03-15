@@ -1,17 +1,17 @@
 env:
     MANIFEST: https://github.com/The-RAVEN-OS/manifest.git
     MANIFEST_BRANCH: twelve
-    DEVICE: A6020
-    OEM: lenovo
-    DT_LINK: https://github.com/Sushrut1101-ROMs/device_lenovo_A6020.git -b rr_10
+    DEVICE: WSP_sprout
+    OEM: hmd
+    DT_LINK: https://github.com/SmallPP420/final_device_WSP_sprout.git -b lineage-18
     DT_PATH: device/$OEM/$DEVICE
-    VT_LINK: https://github.com/hsj51/vendor_lenovo_A6020.git -b 10.x
+    VT_LINK: https://github.com/SmallPP420/vendor_nokia_WSP_sprout -b lineage-18
     VT_PATH: vendor/$OEM/$DEVICE
     KT_LINK: https://github.com/jro1979oliver/android_kernel_lenovo_msm8916.git
     PLATFORM: msm8916
     KT_PATH: kernel/$OEM/$PLATFORM
     EXTRA_CMD: "git clone --depth=1 https://github.com/ghostrider-reborn/prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-6.x.git $SYNC_PATH/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x"
-    LUNCH_COMBO: rr_A6020-userdebug
+    LUNCH_COMBO: WSP_sprout-userdebug
     TARGET: bacon
     OUTPUT: RROS*.zip
 
